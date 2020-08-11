@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>SpotMate</title>
+	</head>
+	<body *ngIf="userData$ | async as userData">
+		<main>
+			<div class="split top">
+				<div class="right">
+					<!-- <img src='./boi.jpg' height="50" style="top:5%"/> -->
+					<p>{{ userData.display_name }}</p>
+				</div>
+				<div class="centered">
+				  <h1>SpotMate</h1>
+				  <p>"I like music because songs say what I can't."</p>
+				</div>
+			</div>
+			  
+            <div class="split bottom">
+				<div>
+					<table *ngIf="userPlaylists$ | async as userPlaylists">
+						<tr>
+							<th>your playlists</th>
+						</tr>
+						<tr *ngFor="let playlist of userPlaylists">
+							<td><a [routerLink]="['/user', userId, playlist.id]">{{ playlist.name }}</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</main>	
+	</body>
+</html>

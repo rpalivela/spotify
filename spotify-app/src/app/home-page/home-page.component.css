@@ -1,0 +1,48 @@
+html {
+    background: url('./background.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color:#ffff;
+    text-align: center;
+    font-size: 3em;
+    font-style: italic;
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: #ffff;
+    text-align: center;
+    vertical-align: -webkit-baseline-middle;
+}
+
+.loginC{
+    margin: auto;
+    width: 250px;
+    clear: both;
+}
+
+.loginC input {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 17px;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 23px;
+    width: 100%;
+    clear: both;
+}
+
+.loginC button{
+    margin-left: 87px;
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    font-family: 'Permanent Marker', cursive;
+}

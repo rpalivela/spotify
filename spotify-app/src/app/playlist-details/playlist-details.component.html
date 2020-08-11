@@ -1,0 +1,4 @@
+<span *ngIf="userPlaylist$ | async as playlist">{{ playlist.name }}</span>
+<div *ngIf="playlistTracks$ | async as tracks">
+    <p *ngFor="let trackh of tracks">{{ trackh.track.name }}</p>
+</div>
