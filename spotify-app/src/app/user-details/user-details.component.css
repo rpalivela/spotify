@@ -5,3 +5,70 @@ a {
 a:visited {
     color: blue;
 }
+
+h1 {text-align: center;
+	font-family: "Comic Sans MS";
+	font-size: 72px;
+}
+
+body {
+	font-family: "Comic Sans MS";
+	color: white;
+}
+
+.split {
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	overflow-x: hidden;
+	padding-top: 20px;
+}
+
+.top {
+	top: 0;
+	height: 40%;
+	background-color: #1D262B;
+}
+
+.bottom {
+	height:60%;
+	bottom: 0;
+	background-color: #57B560;
+}
+
+.centered {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.right {
+	position: absolute;
+	right: 5%;
+}
+
+table {
+	position: relative;
+	width: 75%;
+	margin-left:auto; 
+	margin-right:auto;
+	text-align: center;
+	margin-top: 2%;
+}
+
+tr {
+	font-family: "Chalkduster";
+}
+
+th {
+	font-weight: "bold";
+	font-size: 30px;
+}
+
+td {
+	font-size: 24px;
+	padding: 10px;
+}
