@@ -17,8 +17,8 @@ export class PlaylistDetailsComponent implements OnInit {
   userPlaylist$: Observable<Playlist>;
   playlistTracks$: Observable<Track[]>;
 
-  constructor(public activatedRoute: ActivatedRoute,
-    private userDataService: UserDataService) { }
+  constructor(public activatedRoute: ActivatedRoute, 
+              private userDataService: UserDataService) { }
 
   ngOnInit(): void {
     this.activatedRoute.params.subscribe(
